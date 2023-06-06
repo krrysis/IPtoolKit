@@ -1,0 +1,1 @@
+nmap -iL D:\scripts\IpScanner\iplist.csv -oN D:\scripts\IpScanner\nmap-443-vulnscan.txt -p 443
