@@ -1,3 +1,7 @@
+#This scans IPs and returns which of them can be pinged
+#author: Kshitij
+#github: https://github.com/krrysis
+
 import os
 import csv
 
