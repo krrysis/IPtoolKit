@@ -1,5 +1,5 @@
 # IpScanner
-Scans if ip address are up or down, nmap script that outputs to a file
+Scans if ip address are up or down
 # IPforURL
 Python program that takes URLs from a CSV file, pings them, and stores the IP address against the URL in a separate CSV file
 # Nmap
