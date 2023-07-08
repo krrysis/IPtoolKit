@@ -1,3 +1,7 @@
+#Take csv file, put all your domains and ip into it, this will output the expiry date for it
+#author: Kshitij
+#github: https://github.com/krrysis
+
 import ssl
 import OpenSSL
 import datetime
@@ -12,9 +16,12 @@ def get_SSL_Expiry_Date (host, port):
     return(formatted_expiry_date)
 
 #get_SSL_Expiry_Date ("121.244.93.46", 443)
-with open('output.csv', mode='r') as csv_file:
-    csv_reader = csv.reader(csv_file)
-    for row in csv_reader:
-        ip_address = row[0]
-        port = 443
-        print(f'{ip_address}:{port} - {get_SSL_Expiry_Date(ip_address, port)}')
+with open('output.csv', mode='w', newline='') as csv_file:
+    writer = csv.writer(csv_file)
+    writer.writerow(['IP Address', 'SSL Expiry Date'])
+    with open('input.csv', mode='r') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        for row in csv_reader:
+            ip_address = row[0]
+            port = 443
+            writer.writerow([ip_address, get_SSL_Expiry_Date(ip_address, port)])

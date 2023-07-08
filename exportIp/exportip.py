@@ -1,3 +1,6 @@
+#take a text fine, paste all the text you want, it'll identify all the ip addresses from it and put it into csv file for you, how convenient
+#author: Kshitij
+#github: https://github.com/krrysis
 import re
 import csv
 
