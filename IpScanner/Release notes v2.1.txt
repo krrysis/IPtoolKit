@@ -1,0 +1,21 @@
+#This scans IPs and returns which of them can be pinged
+#author: Kshitij
+#github: https://github.com/krrysis
+
+V 1.0:
+normal single thread ip scanner. 
+-shows which ip is up / down
+-shows total number of online/offline
+-lists offline hosts
+
+v 2.0:
+multi thread ip scanner
+-shows which ip is up / down
+-shows total number of online/offline
+-lists offline hosts
+
+V 2.1:
+-shows which ip is up / down
+-shows total number of online/offline
+-lists offline hosts
+-Exports in CSV
