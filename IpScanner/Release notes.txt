@@ -19,3 +19,7 @@ V 2.1:
 -shows total number of online/offline
 -lists offline hosts
 -Exports in CSV
+
+V 2.2
+-All of the above
+-Now asks users choice between scanning between specific ips in csv or a ip with subnet mask
