@@ -1,11 +1,17 @@
-# Ask the user for input
-user_input = input("Please paste a bunch of IPs, each on a new line:\n")
+# Initialize an empty list to store IPs
+ip_list = []
 
-# Split the input into a list of IPs
-ip_list = user_input.split()
+print("Please paste a bunch of IPs, each on a new line. Press Enter on an empty line to finish:")
 
-# Format the output string
-output = f"attacker.ip not in {ip_list}"
+# Collect IPs until a blank line is entered
+while True:
+    ip = input()
+    if ip == "":
+        break
+    ip_list.append(ip)
+
+# Format the output string with double quotes
+output = f'attacker.ip not in ["' + '", "'.join(ip_list) + '"]'
 
 # Print the output
 print(output)
